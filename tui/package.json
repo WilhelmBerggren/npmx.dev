@@ -1,0 +1,35 @@
+{
+  "name": "npmx-tui",
+  "version": "0.0.1",
+  "description": "Terminal UI for npmx.dev - browse the npm registry from your terminal",
+  "homepage": "https://npmx.dev",
+  "bugs": {
+    "url": "https://github.com/npmx-dev/npmx.dev/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npmx-dev/npmx.dev.git",
+    "directory": "tui"
+  },
+  "bin": {
+    "npmx-tui": "./src/index.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-ffi src/index.ts",
+    "start": "node --experimental-ffi src/index.ts",
+    "demo": "node src/index.ts --demo",
+    "test:types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opentui/core": "0.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.2",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=26.4.0"
+  }
+}
